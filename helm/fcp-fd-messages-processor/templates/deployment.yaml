@@ -1,0 +1,8 @@
+{{- include "ffc-helm-library.deployment" (list . "fcp-fd-messages-processor.deployment") -}}
+{{- define "fcp-fd-messages-processor.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "ffc-helm-library.container" (list . "fcp-fd-messages-processor.container") }}
+{{- end -}}
