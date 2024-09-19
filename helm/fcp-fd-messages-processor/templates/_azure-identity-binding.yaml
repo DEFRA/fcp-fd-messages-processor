@@ -1,0 +1,4 @@
+{{- include "ffc-helm-library.cluster-ip-service" (list . "fcp-fd-messages-processor.service") -}}
+{{- define "fcp-fd-messages-processor.service" -}}
+# Microservice specific configuration in here
+{{- end -}}
